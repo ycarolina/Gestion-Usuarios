@@ -31,6 +31,7 @@ export class UsuarioTablaComponent implements OnInit {
   ngOnInit(): void {
 
     this.getUsers();
+    
   }
 
   ngAfterViewInit() {
