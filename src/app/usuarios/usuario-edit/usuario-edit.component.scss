@@ -1,0 +1,33 @@
+.incident-container {
+    display: flex;
+    flex-direction: column;
+    form {
+        margin-bottom: 20px;
+        input[type='file'] {
+            display: none;
+        }
+        input.mat-flat-button {
+            width: 100%;
+            background: #ffffff;
+            &:hover {
+                background: #ffffff;
+            }
+        }
+        .custom-file {
+            border: 1px solid #ffffff;
+            display: inline-block;
+            padding: 6px 0;
+            cursor: pointer;
+            width: 100%;
+        }
+        .container-input-file {
+            margin-bottom: 0 2rem;
+        }
+        .container-button {
+            min-height: 80px;
+        }
+        mat-form-field {
+            width: 100%;
+        }
+    }
+}

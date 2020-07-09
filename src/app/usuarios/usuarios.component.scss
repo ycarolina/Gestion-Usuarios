@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
