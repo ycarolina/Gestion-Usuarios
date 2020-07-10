@@ -56,8 +56,10 @@ export class Csv2fireService {
 
   tamanioJson(json){
     let usersJson :any[] =[];
+    let objeto :any;
     for (let index = 0; index < json.length-1; index++) {
-      usersJson.push(json[index]);
+      objeto = this.darFormato(json[index]);
+      usersJson.push(objeto);
     }
     return usersJson;
   }
@@ -66,6 +68,18 @@ export class Csv2fireService {
     this._snackBar.open(mensaje, "OK", {
       duration: 5000,
     });
+  }
+
+  darFormato(obj : any){
+    //estado_registro 
+    obj.estado_registro = Number(obj.estado_registro); 
+    //id_departamento
+    obj.id_departamento = Number(obj.id_departamento); 
+    //id_pais
+    obj.id_pais = Number(obj.id_pais); 
+    //id_usuario
+    obj.id_usuario = Number(obj.id_usuario); 
+    return obj;
   }
 
   
