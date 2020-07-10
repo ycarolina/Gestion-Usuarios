@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "exact-6157040": {
+      "hosting": {
+        "crud": [
+          "exact-6157040"
+        ]
+      }
+    }
+  }
+}
